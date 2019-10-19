@@ -18,11 +18,11 @@
 
 		function style(index) {
 			var style = {
-				bottom: (108 + 245 * (index % 2)) + 'px',
-				width: '120px',
-				height: '200px'
+				bottom: (108 + 267 * (index % 2)) + 'px',
+				width: '140px',
+				height: '230px'
 			};
-			style[map.left] = (310 + 85 * index) + 'px';
+			style[map.left] = (310 + 92 * index) + 'px';
 			return style;
 		}
 
