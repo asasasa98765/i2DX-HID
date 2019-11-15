@@ -44,7 +44,32 @@ enum ScanCode
 	SCANCODE_SEMICOLON = 0x27,
 	SCANCODE_FORWARDSLASH = 0x35,
 	SCANCODE_BRACKET_CLOSE=0x1b,
-	SCANCODE_HASH = 0x2b
+	SCANCODE_HASH = 0x2b,
+	// CHUNITHM
+	SCANCODE_1 = 0x02,
+	SCANCODE_2 = 0x03,
+	SCANCODE_3 = 0x04,
+	SCANCODE_4 = 0x05,
+	SCANCODE_5 = 0x06,
+	SCANCODE_6 = 0x07,
+	SCANCODE_7 = 0x08,
+	SCANCODE_8 = 0x09,
+	SCANCODE_Q = 0x10,
+	SCANCODE_W = 0x11,
+	SCANCODE_E = 0x12,
+	SCANCODE_R = 0x13,
+	SCANCODE_T = 0x14,
+	SCANCODE_Y = 0x15,
+	SCANCODE_U = 0x16,
+	SCANCODE_I = 0x17,
+	SCANCODE_A = 0x1e,
+	SCANCODE_G = 0x22,
+	SCANCODE_H = 0x23,
+	SCANCODE_J = 0x24,
+	SCANCODE_B = 0x30,
+	SCANCODE_N = 0x31,
+	SCANCODE_CONMA = 0x33
+
 };
 
 // Thread that passes through keyboard input
@@ -123,6 +148,135 @@ int main()
 						stroke.code = player == "1" ? SCANCODE_QUOTATIONMARK: SCANCODE_HASH;
 						stroke.state = state == 1 ? 0x00 : 0x01;
 					}
+					else if (msg->match("/jubeat_1").popInt32(state).popStr(player).isOkNoMoreArgs()) {
+						stroke.code =  SCANCODE_1 ;
+						stroke.state = state == 1 ? 0x00 : 0x01;
+					}
+					else if (msg->match("/jubeat_2").popInt32(state).popStr(player).isOkNoMoreArgs()) {
+						stroke.code = SCANCODE_Q;
+						stroke.state = state == 1 ? 0x00 : 0x01;
+					}
+					else if (msg->match("/jubeat_3").popInt32(state).popStr(player).isOkNoMoreArgs()) {
+						stroke.code = SCANCODE_2;
+						stroke.state = state == 1 ? 0x00 : 0x01;
+					}
+					else if (msg->match("/jubeat_4").popInt32(state).popStr(player).isOkNoMoreArgs()) {
+						stroke.code = SCANCODE_W;
+						stroke.state = state == 1 ? 0x00 : 0x01;
+					}
+					else if (msg->match("/jubeat_5").popInt32(state).popStr(player).isOkNoMoreArgs()) {
+						stroke.code = SCANCODE_3;
+						stroke.state = state == 1 ? 0x00 : 0x01;
+					}
+					else if (msg->match("/jubeat_6").popInt32(state).popStr(player).isOkNoMoreArgs()) {
+						stroke.code = SCANCODE_E;
+						stroke.state = state == 1 ? 0x00 : 0x01;
+					}
+					else if (msg->match("/jubeat_7").popInt32(state).popStr(player).isOkNoMoreArgs()) {
+						stroke.code = SCANCODE_4;
+						stroke.state = state == 1 ? 0x00 : 0x01;
+					}
+					else if (msg->match("/jubeat_8").popInt32(state).popStr(player).isOkNoMoreArgs()) {
+						stroke.code = SCANCODE_R;
+						stroke.state = state == 1 ? 0x00 : 0x01;
+					}
+					else if (msg->match("/jubeat_9").popInt32(state).popStr(player).isOkNoMoreArgs()) {
+						stroke.code = SCANCODE_5;
+						stroke.state = state == 1 ? 0x00 : 0x01;
+					}
+					else if (msg->match("/jubeat_10").popInt32(state).popStr(player).isOkNoMoreArgs()) {
+						stroke.code = SCANCODE_T;
+						stroke.state = state == 1 ? 0x00 : 0x01;
+					}
+					else if (msg->match("/jubeat_11").popInt32(state).popStr(player).isOkNoMoreArgs()) {
+						stroke.code = SCANCODE_6;
+						stroke.state = state == 1 ? 0x00 : 0x01;
+					}
+					else if (msg->match("/jubeat_12").popInt32(state).popStr(player).isOkNoMoreArgs()) {
+						stroke.code = SCANCODE_Y;
+						stroke.state = state == 1 ? 0x00 : 0x01;
+					}
+					else if (msg->match("/jubeat_13").popInt32(state).popStr(player).isOkNoMoreArgs()) {
+						stroke.code = SCANCODE_7;
+						stroke.state = state == 1 ? 0x00 : 0x01;
+					}
+					else if (msg->match("/jubeat_14").popInt32(state).popStr(player).isOkNoMoreArgs()) {
+						stroke.code = SCANCODE_U;
+						stroke.state = state == 1 ? 0x00 : 0x01;
+					}
+					else if (msg->match("/jubeat_15").popInt32(state).popStr(player).isOkNoMoreArgs()) {
+						stroke.code = SCANCODE_8;
+						stroke.state = state == 1 ? 0x00 : 0x01;
+					}
+					else if (msg->match("/jubeat_16").popInt32(state).popStr(player).isOkNoMoreArgs()) {
+						stroke.code = SCANCODE_I;
+						stroke.state = state == 1 ? 0x00 : 0x01;
+					}
+					else if (msg->match("/jubeat_17").popInt32(state).popStr(player).isOkNoMoreArgs()) {
+						stroke.code = SCANCODE_A;
+						stroke.state = state == 1 ? 0x00 : 0x01;
+					}
+					else if (msg->match("/jubeat_18").popInt32(state).popStr(player).isOkNoMoreArgs()) {
+						stroke.code = SCANCODE_Z;
+						stroke.state = state == 1 ? 0x00 : 0x01;
+					}
+					else if (msg->match("/jubeat_19").popInt32(state).popStr(player).isOkNoMoreArgs()) {
+						stroke.code = SCANCODE_S;
+						stroke.state = state == 1 ? 0x00 : 0x01;
+					}
+					else if (msg->match("/jubeat_20").popInt32(state).popStr(player).isOkNoMoreArgs()) {
+						stroke.code = SCANCODE_X;
+						stroke.state = state == 1 ? 0x00 : 0x01;
+					}
+					else if (msg->match("/jubeat_21").popInt32(state).popStr(player).isOkNoMoreArgs()) {
+						stroke.code = SCANCODE_D;
+						stroke.state = state == 1 ? 0x00 : 0x01;
+					}
+					else if (msg->match("/jubeat_22").popInt32(state).popStr(player).isOkNoMoreArgs()) {
+						stroke.code = SCANCODE_C;
+						stroke.state = state == 1 ? 0x00 : 0x01;
+					}
+					else if (msg->match("/jubeat_23").popInt32(state).popStr(player).isOkNoMoreArgs()) {
+						stroke.code = SCANCODE_F;
+						stroke.state = state == 1 ? 0x00 : 0x01;
+					}
+					else if (msg->match("/jubeat_24").popInt32(state).popStr(player).isOkNoMoreArgs()) {
+						stroke.code = SCANCODE_V;
+						stroke.state = state == 1 ? 0x00 : 0x01;
+					}
+					else if (msg->match("/jubeat_25").popInt32(state).popStr(player).isOkNoMoreArgs()) {
+						stroke.code = SCANCODE_G;
+						stroke.state = state == 1 ? 0x00 : 0x01;
+					}
+					else if (msg->match("/jubeat_26").popInt32(state).popStr(player).isOkNoMoreArgs()) {
+						stroke.code = SCANCODE_B;
+						stroke.state = state == 1 ? 0x00 : 0x01;
+					}
+					else if (msg->match("/jubeat_27").popInt32(state).popStr(player).isOkNoMoreArgs()) {
+						stroke.code = SCANCODE_H;
+						stroke.state = state == 1 ? 0x00 : 0x01;
+					}
+					else if (msg->match("/jubeat_28").popInt32(state).popStr(player).isOkNoMoreArgs()) {
+						stroke.code = SCANCODE_N;
+						stroke.state = state == 1 ? 0x00 : 0x01;
+					}
+					else if (msg->match("/jubeat_29").popInt32(state).popStr(player).isOkNoMoreArgs()) {
+						stroke.code = SCANCODE_J;
+						stroke.state = state == 1 ? 0x00 : 0x01;
+					}
+					else if (msg->match("/jubeat_30").popInt32(state).popStr(player).isOkNoMoreArgs()) {
+						stroke.code = SCANCODE_M;
+						stroke.state = state == 1 ? 0x00 : 0x01;
+					}
+					else if (msg->match("/jubeat_31").popInt32(state).popStr(player).isOkNoMoreArgs()) {
+						stroke.code = SCANCODE_K;
+						stroke.state = state == 1 ? 0x00 : 0x01;
+					}
+					else if (msg->match("/jubeat_31").popInt32(state).popStr(player).isOkNoMoreArgs()) {
+						stroke.code = SCANCODE_CONMA;
+						stroke.state = state == 1 ? 0x00 : 0x01;
+					}
+
 					else {
 						cout << "Server: unhandled message: " << *msg << "\n";
 					}

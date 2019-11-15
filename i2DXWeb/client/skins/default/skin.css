@@ -141,7 +141,23 @@
 .jubeat_13,
 .jubeat_14,
 .jubeat_15,
-.jubeat_16
+.jubeat_16,
+.jubeat_17,
+.jubeat_18,
+.jubeat_19,
+.jubeat_20,
+.jubeat_21,
+.jubeat_22,
+.jubeat_23,
+.jubeat_24,
+.jubeat_25,
+.jubeat_26,
+.jubeat_27,
+.jubeat_28,
+.jubeat_29,
+.jubeat_30,
+.jubeat_31,
+.jubeat_32
 {
 	border: 4px solid #454443;
 	background: #090807;
@@ -163,7 +179,23 @@
 .jubeat_13.state-pressed,
 .jubeat_14.state-pressed,
 .jubeat_15.state-pressed,
-.jubeat_16.state-pressed
+.jubeat_16.state-pressed,
+.jubeat_17.state-pressed,
+.jubeat_18.state-pressed,
+.jubeat_19.state-pressed,
+.jubeat_20.state-pressed,
+.jubeat_21.state-pressed,
+.jubeat_22.state-pressed,
+.jubeat_23.state-pressed,
+.jubeat_24.state-pressed,
+.jubeat_25.state-pressed,
+.jubeat_26.state-pressed,
+.jubeat_27.state-pressed,
+.jubeat_28.state-pressed,
+.jubeat_29.state-pressed,
+.jubeat_30.state-pressed,
+.jubeat_31.state-pressed,
+.jubeat_32.state-pressed
 {
 	background: #8b8685;
 	border-color: #bef;
